@@ -34,6 +34,7 @@ module.exports = {
       node: {
         extensions: ['.tsx', '.ts', '.js', '.json'],
       },
+      typescript: {},
     },
   },
   rules: {
@@ -43,8 +44,8 @@ module.exports = {
       {
         ts: 'never',
         tsx: 'never',
-        json: 'never',
         js: 'never',
+        json: 'never',
       },
     ],
     'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
@@ -95,7 +96,7 @@ module.exports = {
     'react/jsx-props-no-spreading': OFF,
 
     'lines-between-class-members': [ERROR, 'always'],
-    indent: [ERROR, 2, { SwitchCase: 1 }],
+    indent: [OFF, 2, { SwitchCase: 1 }],
     'linebreak-style': [ERROR, 'unix'],
     quotes: [ERROR, 'single'],
     semi: [ERROR, 'never'],
@@ -103,7 +104,7 @@ module.exports = {
     'no-plusplus': OFF,
     'no-console': OFF,
     'class-methods-use-this': ERROR,
-    'jsx-quotes': [ERROR, 'prefer-single'],
+    // 'jsx-quotes': [ERROR, 'single'],
     'global-require': OFF,
   },
 }
